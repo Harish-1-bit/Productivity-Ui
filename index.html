@@ -1,44 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ui 5</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <img height="25" width="25" src="logo.jpg" alt="">
-            <p>ChronoTask</p>
-        </div>
-        <ul class="nav-list">
-            <li>Fostures</li>
-            <li>Solutions</li>
-            <li>Resources</li>
-            <li>Pricing</li>
-        </ul>
-        <div class="nav-buttons">
-            <p>Signin</p>
-            <button>Get Demo</button>
-        </div>
-    </nav>
-    <main>
-        <img id="top-left" src="top-left.jpg" alt="">
-        <img id="top-right" src="top-right.jpg" alt="">
-        <img id="bottom-left" src="bottom-left.jpg" alt="">
-        <img id="bottom-right" src="bottom-right.jpg" alt="">
-        <div class="main-text">
-            <img src="Screenshot 2025-08-05 172802.png" alt="">
-            <p>Think, Plan, and Track</p>
-            <p>all in one place</p>
-            <p>Efficiently manage your task and boost productivity</p>
-            <button>Get demo</button>
-        </div>
-    </main>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin-inline: 50px;
+    height: 10vh;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    p{
+        margin-left: 12px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    font-size: 0.9rem;
+    gap: 40px;
+}
+.nav-buttons{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    button{
+        margin-left: 20px;
+        border: 0.5px solid rgba(0, 0, 0, 0.308);
+        padding: 10px 15px;
+        background-color: white;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+}
+main{
+    margin-inline: 12px;
+    width: auto;
+    height: 120vh;
+    position: relative;
+    display: flex;
+    border: 1px solid rgb(219, 217, 217);
+    border-radius: 20px;
+    /* background-image: url("dotted_black_background.jpg");
+    background-size: cover;
+    opacity: 0.5; */
+}
+#top-left{
+    top: 35px;
+    border-radius: 20px 0px 0px 0px;
+    position: absolute;
+    height: 330px;
+    width: 250px;
+}
+#top-right{
+    top: 20px;
+    border-radius: 0px 20px 0px 0px;
+    position: absolute;
+    height: 350px;
+    width: 270px;
+    right: 0px;
+}
+#bottom-left{
+bottom: 0px;
+    border-radius: 0px 0px 0px 20px;
+    position: absolute;
+    height: 150px;
+    width: 270px;
+}
+#bottom-right{
+bottom: 0px;
+    border-radius: 0px 0px 20px 0px;
+    position: absolute;
+    height: 150px;
+    width: 270px;
+    right: 0px;
+}
+.main-text{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p:nth-child(2){
+        font-size: 5rem;
+        font-weight: 600;
+    }
+    p:nth-child(3){
+        margin-top: 0px;
+        font-size: 5rem;
+        color: silver;
+        font-weight: 500;
+    }
+    p:nth-child(4){
+        font-size: 1rem;
+         line-height: 80px;
+    }
+    button{
+       
+        padding: 15px 40px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-weight: 600;
+        font-size: 1.1rem;
+        background-color: #1A76FF;
+    }
+}
