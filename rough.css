@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 130vh;
+    background-image: url("Airbrush-Image-Enhancer-1754388751371.jpg");
+    background-size: cover;
+}
